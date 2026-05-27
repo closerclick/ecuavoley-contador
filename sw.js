@@ -1,4 +1,4 @@
-const CACHE = 'ecuavoley-v2';
+const CACHE = 'ecuavoley-v3';
 const ASSETS = [
   './',
   './index.html',
