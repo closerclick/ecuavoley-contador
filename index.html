@@ -28,7 +28,9 @@
 <meta name="twitter:description" content="Marcador táctil para partidos de ecuavóley. Gana el primero en llegar a 15." />
 <meta name="twitter:image" content="https://ecuavoley.closer.click/og.jpg" />
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  /* touch-action: manipulation → en iOS el doble-tap NO hace zoom (Safari ignora
+     user-scalable=no desde iOS 10); además quita el delay de 300ms al tocar. */
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
   html, body {
     height: 100%;
     overflow: hidden;
